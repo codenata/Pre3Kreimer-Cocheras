@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Cocheras</title>
+</head>
+<body>
+    <form>
+        <label for="user">USUARIO:</label><br>
+        <input type="text" id="user" placeholder="Ingrese su usuario" name="user"><br>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" placeholder="Ingrese su nombre" name="name"><br>
+        <label for="surname">Apellido:</label><br>
+        <input type="text" id="surname" placeholder="Ingrese su apellido" name="surname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" placeholder="Ingrese su mejor email" name="email"><br>
+        <label for="price">Precio:</label><br>
+        <input type="number" step="1000" min="8000" id="price" placeholder="Ingrese el precio base" name="price"><br>
+        <label for="address">Direccion:</label><br>
+        <input type="text" id="address" placeholder="Ingrese la direccion" name="address"><br>
+        <label for="zone">Zona:</label><br>
+        <select id="zone" placeholder="Indique la zona de su cochera" name="zone">
+            <option value="CENTRO 1">CENTRO 1</option>
+            <option value="CERCA 2">CERCA 2</option>
+            <option value="LEJOS 3">LEJOS 3</option>
+        </select><br><br>
+
+        <input type="checkbox" id="remote" name="remote" value="yes">
+        <label for="remote">Tiene control remoto y portero automatico</label><br>
+        <input type="checkbox" id="large" name="large" value="yes">
+        <label for="large">Es tamaño grande, como para camioneta</label><br>
+        <input type="checkbox" id="covered" name="covered" value="yes">
+        <label for="covered">Es cochera totalmente cubierta</label><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="final-price"></p>
+
+    <div id="card-container"></div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
